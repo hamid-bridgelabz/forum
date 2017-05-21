@@ -1,0 +1,11 @@
+<div style="padding:80px" data-ng-init="answerInit()">
+<div class="col l3 m6 margin-bottom card" style="height:200px;margin-left:10px" data-ng-repeat="link in linkList">
+      <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+      <h4>{{link.question}}</h4>
+      <div class="container">
+      <p class="opacity">Question Asked:{{link.time| date:'MM/dd/yyyy @ h:mma'}}</p>
+      <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+      <p style="padding-bottom:5px;"><a href="https://stackoverflow.com{{link.link}}">Go to Question Page</a></p>
+      </div>
+</div>
+</div>

@@ -16,12 +16,16 @@
     <a ui-sref="home" class="bar-item button"><b>Question</b> Answer</a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="right hide-small">
-      <a ui-sref="question" class="bar-item button">Questions</a>
+      <a ui-sref="question" class="bar-item button">Technologies</a>
       <a ui-sref="about" class="bar-item button">About</a>
-      <a ui-sref="contact" class="bar-item button">Contact</a>
+      <a ui-sref="about" class="bar-item button">Contact</a>
     </div>
   </div>
 </div>
-    <ui-view>
+    <ui-view></ui-view>
   </body>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="controller/questionCtrl.js" charset="utf-8"></script>
+  <script src="controller/answerCtrl.js" charset="utf-8"></script>
+  <script src="services/restservice.js" charset="utf-8"></script>
 </html>

@@ -3,8 +3,21 @@ angular.module("myApp",["ui.router"])
   $stateProvider
   .state("home",{
     url:"/",
-    templateUrl:"template/header.html",
-    controller:function(){
+    templateUrl:"view/home.html"
+  })
+  .state("question",{
+    url:"/question",
+    templateUrl:"view/question.html",
+    controller:"questionCtrl"
+  })
+  .state("answer",{
+    url:"/answer/:filaName",
+    templateUrl:"view/answer.html",
+    controller:"answerCtrl"
+  })
+  .state("about",{
+    url:"/about",
+    templateUrl:"view/about.html",
   })
   $urlRouterProvider.otherwise("/");
 })
